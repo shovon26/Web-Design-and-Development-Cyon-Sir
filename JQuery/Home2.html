@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Homes</title>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div.d1").toggle(2000);
+            });
+
+           $("button").click(function () {
+               $("#div1").fadeIn();
+               $("#div2").fadeIn("slow");
+               $("#div3").fadein(3000);
+           }) ;
+
+            $("button").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            }) ;
+
+            $("button").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            }) ;
+
+            $("button").click(function () {
+                $("#divas1").fadeTo("slow",0.3);
+                $("#divas2").fadeTo("slow",0.4);
+                $("#divas3").fadeTo(0.5);
+            }) ;
+
+                $("#flip").click(function(){
+                    $("#panel").slideDown("slow");
+                });
+
+        });
+    </script>
+</head>
+<body>
+   <button>Toggle</button>
+   <div class="d1" style="border:1px solid black;padding:5px;width: 250px">
+<p>
+    <b>This is a little poem: </b><br/>
+    Twinkle, twinkle, little star<br/>
+    How I wonder what you are<br/>
+    Up above the world so high<br/>
+    Like a diamond in the sky<br/>
+    Twinkle, twinkle little star<br/>
+    How I wonder what you are
+</p>
+   </div>
+
+<br><br>
+
+<p>See the fadeIn() method example with different parameters.</p>
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width: 80px;height:80px;display: none;background-color: red"></div>
+   <div id="div2" style="width: 80px;height:80px;display: none;background-color: blue"></div>
+   <div id="div3" style="width: 80px;height:80px;display: none;background-color: green"></div><br><br><br><br>
+
+   <p>See the fadeOut() method example with different parameters.</p>
+   <button>Click to fade Out boxes</button><br><br>
+
+   <div id="div1" style="width: 80px;height:80px;display: none;background-color: red"></div>
+   <div id="div2" style="width: 80px;height:80px;display: none;background-color: blue"></div>
+   <div id="div3" style="width: 80px;height:80px;display: none;background-color: green"></div><br><br><br><br>
+
+
+   <p>See the fadeToggle() method example with different parameters.</p>
+   <button>Click to fade Toggle boxes</button><br><br>
+
+   <div id="div1" style="width: 80px;height:80px;display: none;background-color: red"></div>
+   <div id="div2" style="width: 80px;height:80px;display: none;background-color: blue"></div>
+   <div id="div3" style="width: 80px;height:80px;display: none;background-color: green"></div><br><br><br><br>
+
+   <p>See the fadeTo() method example with different parameters.</p>
+   <button>Click to fade To boxes</button><br><br>
+
+   <div id="divas1" style="width: 80px;height:80px;display: none;background-color: red"></div>
+   <div id="divas2" style="width: 80px;height:80px;display: none;background-color: blue"></div>
+   <div id="divas3" style="width: 80px;height:80px;display: none;background-color: green"></div><br><br><br>
+
+   <div id="flip">Click to slide down panel</div>
+   <div id="panel">Hello javatpoint.com!
+       It is the best tutorial website to learn jQuery and other languages.</div>
+
+
+
+</body>
+</html>
